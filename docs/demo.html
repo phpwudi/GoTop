@@ -1,0 +1,46 @@
+﻿<html>
+<head>
+<title>Demo Fro GoTop</title>	
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="../GoTop.js"></script>
+<style>
+*{ margin:0;padding:0}
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+</head>
+
+<body>
+<script type="text/javascript">
+$(function(){
+	$(document).goTop({
+		showAfter:'#goTop',	//必选 需执行返回顶部的元素
+		debug:true,			//开启调试状态
+		showPixels:300,		//滚动条滚动高度 单位 px
+		scrollSpeed:1000,	//返回顶部速度
+		callback:function(e){ //回调执行函数
+			//alert(e);
+		}
+	});
+})
+
+</script>
+
+<div style="width:80px; height:50px; font-size:13px;color:#fff; background:red;position:fixed;right:20px;bottom:20px" id="goTop">
+	
+回到顶部
+
+</div>
+
+<div style="height:2000px;maigin:0;padding:0; background:#CCC;">
+	<h1 align=center>我的高度为 2000PX</h1>
+	<h3 align=center style="color:red">请下拉页面，并留意右下角</h2>
+	<h4 align=center>GitHub: <a href="https://github.com/phpwudi/GoTop">https://github.com/phpwudi/GoTop</a></h4>
+	<h4 align=center>Blog: <a href="http://www.cnblogs.com/wendywu/">phpwudi</a></h4>
+</div>
+
+</body>
+
+
+
+
+</html>
